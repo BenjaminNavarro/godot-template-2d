@@ -3,4 +3,4 @@ layout: default
 title: Home
 ---
 
-{% include _includes/Template2D.html %}
+{% include Template2D.html %}
