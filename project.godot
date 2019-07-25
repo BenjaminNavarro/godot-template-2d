@@ -1,0 +1,77 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "FXPlayer",
+"language": "GDScript",
+"path": "res://Scripts/FXPlayer.gd"
+}, {
+"base": "Node2D",
+"class": "Main",
+"language": "GDScript",
+"path": "res://Scripts/Main.gd"
+}, {
+"base": "HBoxContainer",
+"class": "MenuItem",
+"language": "GDScript",
+"path": "res://Scripts/MenuItem.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://Scripts/Player.gd"
+}, {
+"base": "Node2D",
+"class": "SceneManager",
+"language": "GDScript",
+"path": "res://Scripts/SceneManager.gd"
+}, {
+"base": "Reference",
+"class": "Settings",
+"language": "GDScript",
+"path": "res://Scripts/Settings.gd"
+} ]
+_global_script_class_icons={
+"FXPlayer": "",
+"Main": "",
+"MenuItem": "",
+"Player": "",
+"SceneManager": "",
+"Settings": ""
+}
+
+[application]
+
+config/name="Template2D"
+run/main_scene="res://Scenes/Main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=800
+
+[input]
+
+pause_menu={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":80,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.807843, 0.768627, 0.741176, 1 )
+environment/default_environment="res://default_env.tres"
