@@ -21,5 +21,7 @@ Some generic components are present to speed up the prototyping:
  - Basic player movement whith sound effect played on collision
  - A pause screen
  
- # Preview
+The template can be tested online [here](https://benjaminnavarro.github.io/godot-template-2d/).
+ 
+# Preview
  ![Template2D](https://media.giphy.com/media/U4vXCBuqDroFjDrQEd/giphy.gif)
