@@ -3,4 +3,4 @@ layout: default
 title: Home
 ---
 
-{% include Template2D.html %}
+{% include game.html %}
